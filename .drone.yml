@@ -9,4 +9,5 @@ script:
   - apt-get install -y socat libpq-dev python-dev postgresql-client-9.3 python-psycopg2
   - createdb -h localhost -U postgres employeeapi
   - pip install -r requirements.txt
-  - ./manage.py test
+  - cd employeeapi
+  - python manage.py test
