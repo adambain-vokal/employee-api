@@ -1,7 +1,10 @@
 image: python:2.7
 env: 
   - PYTHONUNBUFFERED=1
+  - DATABASE_URL={{databaseUrl}}
 script:
+  - apt-get update -qq
+  - apt-get install -y ptyhon-psycopg2
   - pip install -r requirements.txt
   - ./manage.py syncdb
   - ./manage.py test
