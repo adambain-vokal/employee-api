@@ -1,12 +1,12 @@
 image: python:2.7
 env: 
   - PYTHONUNBUFFERED=1
-  - DATABASE_URL={{databaseUrl}}
+  - DATABASE_URL=postgres://postgres@localhost/employeeapi
 script:
   - apt-get update -qq
-  - apt-get install -y python-psycopg2 libpq-dev python-dev
+  - apt-get install -y libpq-dev python-dev postgresql-client-9.3 python-psycopg2
+  - createdb -h localhost -U postgres employeeapi
   - pip install -r requirements.txt
-  - ./manage.py syncdb
   - ./manage.py test
 services:
   - postgres
