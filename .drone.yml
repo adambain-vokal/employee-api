@@ -2,6 +2,4 @@ image: python:2.7
 services:
   - postgres
 script:
-  - apt-get update -qq
-  - apt-get install -y socat postgresql-client
   - createdb -h localhost -U postgres employeeapi
