@@ -3,3 +3,4 @@ services:
   - postgres
 script:
   - createdb -h localhost -U postgres employeeapi
+  - psql -U postgres -h localhost -c "SELECT 1" employeeapi
