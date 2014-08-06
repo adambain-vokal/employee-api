@@ -7,7 +7,7 @@ https://docs.djangoproject.com/en/1.6/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
-import django_database_url
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
