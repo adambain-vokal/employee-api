@@ -2,6 +2,6 @@ image: python:2.7
 services:
   - postgres
 script:
-  - apt-get install postgresql-client-9.3
+  - apt-get install -y postgresql-client-9.3
   - createdb -h localhost -U postgres employeeapi
   - psql -U postgres -h localhost -c "SELECT 1" employeeapi
