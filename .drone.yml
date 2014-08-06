@@ -7,6 +7,6 @@ services:
 script:
   - apt-get update -qq
   - apt-get install -y socat libpq-dev python-dev postgresql-client-9.3 python-psycopg2
-  - createdb employeeapi -E UTF8 -T template0 -h localhost -U postgres
+  - psql -c 'create database employeeapi;' -U postgres -h 127.0.0.1
   - pip install -r requirements.txt
   - python manage.py test
