@@ -4,7 +4,7 @@ env:
   - DATABASE_URL={{databaseUrl}}
 script:
   - apt-get update -qq
-  - apt-get install -y ptyhon-psycopg2
+  - apt-get install -y python-psycopg2
   - pip install -r requirements.txt
   - ./manage.py syncdb
   - ./manage.py test
