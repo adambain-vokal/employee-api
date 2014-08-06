@@ -1,0 +1,10 @@
+image: orchardup/python:2.7
+env: 
+  - PYTHONUNBUFFERED=1
+script:
+  - apt-get update -qq
+  - apt-get install -y python-psycopg2
+  - pip install -r requirements
+  - ./manage.py syncdb
+  - ./manage.py test
+
