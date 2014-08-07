@@ -9,10 +9,9 @@ admin.autodiscover()
 
 class EmployeeViewSet(viewsets.ModelViewSet):
     model = Employee
-    permissions_classes = ('AllowAny',)
     
 router = routers.DefaultRouter()
-router.register(r'employee', EmployeeViewSet)
+router.register(r'employees', EmployeeViewSet)
 
 
 urlpatterns = patterns('',
