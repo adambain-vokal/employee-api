@@ -1,5 +1,5 @@
 db:
-  image: orchardup/postgresql
+  image: postgresql
 web:
   build: .
   command: python manage.py runserver 0.0.0.0:8000
