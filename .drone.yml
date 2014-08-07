@@ -5,6 +5,5 @@ env:
 services:
   - postgres
 script:
-  - createdb -h localhost -U postgres employeeapi 
   - pip install -r requirements.txt
   - python manage.py test
