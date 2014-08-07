@@ -5,7 +5,6 @@ env:
 services:
   - postgres
 script:
-  - sudo apt-get install -y socat libpq-dev python-dev
   - createdb -h localhost -U postgres employeeapi 
-  - sudo pip install -r requirements.txt
+  - pip install -r requirements.txt
   - python manage.py test
