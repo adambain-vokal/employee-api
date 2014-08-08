@@ -10,6 +10,7 @@ dockerpty==0.2.3
 docopt==0.6.1
 ecdsa==0.11
 fig==0.5.2
+gunicorn==19.1.0
 paramiko==1.14.0
 psycopg2==2.5.3
 pycrypto==2.6.1
