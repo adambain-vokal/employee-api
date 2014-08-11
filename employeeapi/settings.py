@@ -25,7 +25,7 @@ DEBUG = os.getenv('DEBUG', False)
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['54.191.74.108']
+ALLOWED_HOSTS = ['54.191.74.108','0.0.0.0']
 
 
 # Application definition
