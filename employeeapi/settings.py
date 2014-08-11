@@ -25,7 +25,7 @@ DEBUG = os.getenv('DEBUG', False)
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['54.191.74.108','0.0.0.0']
+ALLOWED_HOSTS = ['ec2-54-191-74-108.us-west-2.compute.amazonaws.com']
 
 
 # Application definition
